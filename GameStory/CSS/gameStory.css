@@ -1,0 +1,89 @@
+/*Estilização de toda a página*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+main{
+    width: 100%;
+}
+
+/*Estilização do cabeçalho "header" e do rodapé "footer".*/
+header, footer{
+    width: 100%;
+    color: white;
+    background-color: #5700CB;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.logo{
+    width: 90px;
+    padding-right: 14px;
+}
+.letra-negrito{
+    font-weight: bold;
+}
+
+/*Estilização da página principal da serção "section".*/
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+img{
+    width: 100%;
+}
+
+/*Estilização da 1° serção com o uso da pseudo-classe "of-type".
+Utilizaremos o pseudo-classe "last-of-type" para estilizar o último parágrafo.*/
+.quem-somos p:last-of-type{
+    background-color: #9154E3;
+    display: inline;
+    padding: 10px 5px;
+}
+
+/*Estilização dos títulos da 1° serção e da 2° serção*/
+article{
+    width: 100%;
+    margin: 0 auto;
+}
+.limita-area{
+    max-width: 1024px;
+}
+h2{
+    text-align: center;
+    margin: 20px 0;
+}
+p{
+    line-height: 32px;
+    text-align: justify; 
+}
+
+/*Estilização da tabela usando o pseudo-classe "odd - para números impares" e "even - para números pares".
+Para fazer uma estilização zebrada na tabela.*/
+table{
+    width: 100%;
+    background-color: #DFDFDF;
+    margin: 25px 0;
+}
+thead th{
+    background-color: #5A5A5A;
+}
+th, td{
+    color: white;
+    padding: 6px;
+}
+
+/*Aqui usamos pseudo-classe "odd" para fazer estilo zemabro número impares.*/
+tr:nth-of-type(odd){
+    background-color: #5700CB;
+}
+
+/*Aqui usamos pseudo-classe "even" para fazer estilo zebrado números pares.*/
+tr:nth-of-type(even){
+    background-color: #9154E3;
+}
